@@ -1,6 +1,7 @@
 # RAK811_Utils
 ## utilities for RAK811
 Simple Python Script to quickly configure RAK811 Lora Module.
+
 Usage: You only have to specify two arguments:
   - Serial port for module communication
   - File with lora configurations
