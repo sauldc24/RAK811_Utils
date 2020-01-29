@@ -20,6 +20,8 @@ def main():
                 while mySerial.inWaiting() > 0:
                     time.sleep(.2)
                     print(mySerial.readline())
+            command = "\r\n"
+            sendcommand(command)
             for parameterKey, parameterValue in loraParams.items():
                 command = f"at+set_config=lora:{parameterKey}:{parameterValue}\r\n"
                 sendcommand(command)
